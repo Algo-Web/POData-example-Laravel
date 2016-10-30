@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if ('local' == $this->app->environment()) {
+            $this->app->register('Orangehill\Iseed\IseedServiceProvider');
+            $this->app->register('Iber\Generator\ModelGeneratorProvider');
+        }
     }
 }
