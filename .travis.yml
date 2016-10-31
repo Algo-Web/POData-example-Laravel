@@ -1,12 +1,14 @@
 language: php
-
+services:
+  - mysql
 php:
   - 5.6
   - 7.0
 
 before_script:
   - composer install
-  - php artisan abi:regenerate
+  - php artisan migrate 
+  - php artisan migrate --seed
 #  - wget http://getcomposer.org/composer.phar
 #  - php composer.phar require satooshi/php-coveralls:dev-master --dev --no-progress --prefer-source
 
