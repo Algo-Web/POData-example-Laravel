@@ -24,5 +24,7 @@ class Customer extends Model
 
     protected $guarded = [];
 
-        
+    public function staff() { return $this->belongsTo('App\Models\Staff', 'id', 'staff_id'); }
+    public function photo() { return $this->morphOne('App\Models\Photo', 'rel'); }
+
 }

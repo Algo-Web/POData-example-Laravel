@@ -24,5 +24,7 @@ class Staff extends Model
 
     protected $guarded = [];
 
-        
+    public function customers() { return $this->hasMany('App\Models\Customer', 'staff_id', 'id'); }
+    public function partner() { return $this->hasOne('App\Models\Staff', 'Partner_id', 'id'); }
+    public function photo() { return $this->morphOne('App\Models\Photo', 'rel'); }
 }

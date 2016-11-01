@@ -23,6 +23,6 @@ class Photo extends Model
     ];
 
     protected $guarded = [];
-
+    public function rel() { return $this->morphTo(); }
         
 }
