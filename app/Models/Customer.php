@@ -12,14 +12,14 @@ class Customer extends Model
     use \AlgoWeb\PODataLaravel\Models\MetadataTrait;
     protected $table = 'customer';
 
-    protected $primaryKey = 'ID';
+    protected $primaryKey = 'id';
 
 	public $timestamps = false;
 
     protected $fillable = [
-        'Name',
+        'name',
         'staff_id',
-        'PhotoID'
+        'Photo_id'
     ];
 
     protected $guarded = [];

@@ -12,14 +12,14 @@ class Photo extends Model
     use \AlgoWeb\PODataLaravel\Models\MetadataTrait;
     protected $table = 'photo';
 
-    protected $primaryKey = 'ID';
+    protected $primaryKey = 'id';
 
 	public $timestamps = false;
 
     protected $fillable = [
-        'Content',
-        'Rel-Type',
-        'Rel-ID'
+        'content',
+        'rel_type',
+        'rel_id'
     ];
 
     protected $guarded = [];

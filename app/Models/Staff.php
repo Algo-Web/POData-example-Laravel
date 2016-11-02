@@ -12,14 +12,14 @@ class Staff extends Model
     use \AlgoWeb\PODataLaravel\Models\MetadataTrait;
     protected $table = 'staff';
 
-    protected $primaryKey = 'ID';
+    protected $primaryKey = 'id';
 
 	public $timestamps = false;
 
     protected $fillable = [
-        'Name',
-        'Partner_id',
-        'Photo_id'
+        'name',
+        'partner_id',
+        'photo_id'
     ];
 
     protected $guarded = [];
