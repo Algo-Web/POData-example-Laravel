@@ -21,5 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call('PhotoTableSeeder');
         $this->call('ProductTableSeeder');
         $this->call('StaffTableSeeder');
+        $this->call('PasswordResetsTableSeeder');
+        $this->call('UsersTableSeeder');
     }
 }
