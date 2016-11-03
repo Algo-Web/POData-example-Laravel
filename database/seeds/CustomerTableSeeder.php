@@ -27,14 +27,14 @@ class CustomerTableSeeder extends Seeder
             1 => 
             array (
                 'id' => 2,
-                'name' => 'Óin',
+                'name' => 'Oin',
                 'staff_id' => 1,
                 'photo_id' => 6,
             ),
             2 => 
             array (
                 'id' => 3,
-                'name' => 'Azaghâl',
+                'name' => 'Azaghal',
                 'staff_id' => 1,
                 'photo_id' => 7,
             ),
